@@ -16,4 +16,5 @@ build_flags =
 src_filter = +<Core/Src> +<startup_stm32f103xe.s> +<Drivers/> +<Middlewares/>
 board_build.ldscript = ./STM32F103RCTx_FLASH.ld
 upload_protocol = serial
+monitor_speed = 115200
 ```
