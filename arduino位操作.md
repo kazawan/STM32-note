@@ -58,3 +58,34 @@ void pin_write(POS p,PINSTATE s)
 ```
 
 
+## <font color=#34495E>♿ARDUINO 直接定义寄存器地址 
+
+
+[🔗WOKWI 工程参考](https://wokwi.com/projects/370102518374898689)
+
+
+```c 
+//arduino
+#define PIN_C *(uint8_t*)(0x28) //PORTC 内存地址
+#define BIT_WRITE_PINC(VAL,P)  VAL == 1 ? (PIN_C = PIN_C |= 1 << P) : (PIN_C = PIN_C &= ~(1 << P))
+#define count_p(x,limit) x+1 >= limit ? x= 0:x++ ;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  
+}
+int count = 0;
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+  BIT_WRITE_PINC(0,0);
+  BIT_WRITE_PINC(1,1);
+  // BIT_WRITE_PINC(~count,1);
+  
+  delay(1000);
+  BIT_WRITE_PINC(1,0);
+  BIT_WRITE_PINC(0,1);
+  delay(1000);
+}
+```
