@@ -17,6 +17,8 @@ DC -----------> 接PB1
 CS -----------> 接PA4              
 //----------------------------------------------------------------
 ```
+![pinset](./img/pinset.png )
+
 
 #### :gear:CUBEMX 配置
 
@@ -29,11 +31,11 @@ CS -----------> 接PA4
 >res pb0 output pp 速度low
 >DC pb1 output pp 速度low
 >CS pa4 output pp 速度HIGH
-![img](./img/cubemx01.jpg )
+![cubemx01](./img/cubemx01.jpg )
 
 --------
 >SPI 发送速度设置
-![](./img/spi_speed.png )
+![spi_speed](./img/spi_speed.png )
 
 #### :book:新建`OLED.c`
 
