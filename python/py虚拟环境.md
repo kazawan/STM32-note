@@ -10,9 +10,11 @@
 
 ![py01](./img/py01.png)
 
-><font color="black" > 使用管理员打开`cmd.exe`
+<font color="black" > 使用管理员打开`cmd.exe`
+切换路径到 `PythonVirtualEnv` 文件夹中
+cmd输入   `python -m venv test_env`
 切换路径到 `PythonVirtualEnv\test_env` 文件夹中
-cmd输入 activate
+cmd输入 `activate`
 
 ![py01](./img/py02.png)
 
@@ -22,3 +24,5 @@ cmd输入 activate
 
 
 `pyinstaller -F mycode.py --noconsole `
+
+### 成功打包:shit:
