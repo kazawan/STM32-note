@@ -2,7 +2,7 @@
 
 [知乎参考](https://zhuanlan.zhihu.com/p/371849774?utm_id=0)
 
-
+><font color="red" size="4">注意要在官网下载驱动!!!! [DRIVER下载地址](https://www.stmcu.com.cn/Designresource/detail/firmware_software/709654)
 ### cubemx配置
 
 ![img](./img/cdc01.webp)
